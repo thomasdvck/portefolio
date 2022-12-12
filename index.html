@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio DEVINCK Thomas</title>
+	<link rel="stylesheet" href="style/style_acceuil.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="n-left">
+                <a href="index.html" class="logo">Thomas Devinck</a>
+            </div>
+			<div class="n-right">
+				<a href="index.html" class="n-link">Acceuil</a>
+				<a href="html/profil.html" class="n-link">profil</a>
+				<a href="html/page_administratif.html" class="n-link">document administratif</a>
+				<a href="html/competence_acq.html" class="n-link">competences acquises</a>
+				<a href="html/veille_technologique.html" class="n-link">Veille technologique</a>
+			</div>
+            <img src="Images/menu-btn.png" alt="menu hamburger" class="menu-hamburger" >
+		</nav>
+	</header>
+	<main>
+		<div class="acceuil">
+			<div class="BTS">
+				<h1>Présentation BTS SIO</h1>
+				<br>
+				<h2> - Qu'est ce que le BTS SIO ?</h2>
+				<p>Le BTS (Brevet de Technicien Supérieur) SIO (Système Informatiques aux Organisations) est un diplôme reconnu par l’état de niveau Bac+2. Il remplace, depuis septembre 2011, l’ancien BTS informatique de Gestion (BTS IG). En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification. Le programme a évolué en fonction de la place et du rôle des TIC (Technologies d’Information Communication) et propose deux spécialités bien distinctes : le BTS SIO SISR et le BTS SIO SLAM.</p>
+				<h2 class="spe">Les différentes spécialités</h2>
+				<h3> - SLAM :</h3>
+				<p>SLAM est l'acronyme de "Solutions Logicielles et Application Métiers", cette spécialité s’adresse à des étudiants attirés par les métiers informatiques liés à la conception ainsi qu’à la maintenance de programmes applicatifs.</p>
+				<h3> - SISR :</h3>
+				<p>SISR est l'acronyme de "Solutions d’infrastructure, systèmes et réseaux", cette spécialité est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance d’infrastructures réseaux. Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques font partie des principales missions des futurs administrateurs, techniciens ou pilotes d’exploitation.</p>
+			</div>
+			<div class="pours">
+				<h1>Les poursuites d'études</h1>
+				<p> Après l'acquisition du diplome de BTS SIO, quelque soit la spécialité choisit, il y a différentes poursuites d'études envigasable. Le bachelor est possible, tout comme les licences profesionelles ou bien les licences dans le domaine de l'informatique.</p>
+				<h2> - Les différents bachelor</h2>
+				<p>-Bachelor chef de projets informatiques<br>-Bachelor responsables de la sécurité des systèmes d’information et des résaux<br>-Bachelor informatique systèmes, réseaux et cloud
+					<br>-etc.</p>
+				<h2> - Les différentes Licence pro</h2>
+				<p>-Licence pro systèmes informatiques et logiciels
+					<br>-Licence pro réseaux et télécommunications
+					<br>-Licence pro automatique et informatique industrielle</p>
+				<h2> - La Licence informatique</h2>
+				<p> les licences dans le domaine de l’informatique vous permettent de prétendre facilement à une poursuite d’études en master, et donc en bac+5.
+
+					Au contraire des licences professionnelles, les licences générales ne portent pas de mention particulière. Il s’agit généralement de « licences informatiques », mais celles-ci proposent en revanche de découvrir des domaines spécifiques comme l’algorithmique, l’architecture, les réseaux et systèmes, les bases de données…</p>
+			
+			
+			</div>
+			<div class="remp"><p> La taille de ton écran est trop petit pour afficher mon contenu ! </p></div>
+		</div>
+	</main>
+	<a href="https://www.linkedin.com/in/thomas-devinck-110ba124b/" class="linkedin"><img src="images/61109.png" alt="image linkedin"class="linkedin"></a>
+	<footer>
+		<p><a href="mailto:thoamsmylan@gmail.com" class="mail">Envoyez-moi un mail pour me donner vos avis mais aussi me donner des idées !</a></p> 
+	</footer>
+</body>
+	<script>
+		const menuHamburger = document.querySelector(".menu-hamburger")
+		const navLinks = document.querySelector(".n-right")
+ 
+		menuHamburger.addEventListener('click',()=>{
+		navLinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</html>
