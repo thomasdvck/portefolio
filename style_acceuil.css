@@ -1,0 +1,192 @@
+html, body {
+    margin : 0;
+    padding : 0;
+    background-color: rgb(0 0 0 / 83%);
+}
+
+/*-------------------------------Navbar-------------------------------*/
+
+.navbar{
+    background-color: rgba(238, 234, 234, 0.4);
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+}
+.n-left{
+    float: left;
+}
+.n-right{
+    float: right;
+}
+.logo{
+    color: white;
+    text-transform: uppercase ;
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+}
+.n-link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;margin: 0 15px;
+    transition: all 0.3 ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.n-link:hover{
+    border-color: #fff;
+    padding-bottom: 3px;
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+}
+@media only screen and (max-width:1250px){
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .n-right{
+        position: absolute;
+        background-color: rgba(125,125,125, 0.25);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -100%;
+        z-index: 5;
+    }
+    .n-right.mobile-menu{
+        margin-left: 0;
+        transition: all 0.5s ease;
+    }
+    .n-link:hover{
+        color: red;
+        font-size: 1rem;
+    }
+    .n-left{
+        position: absolute;
+    }
+    .n-link{
+        color: white;
+    }   
+    .mobine-menu:hover{
+        border-bottom: 2px solid transparent;
+        border-color: #000;
+        padding-bottom: 1px;
+    }
+}
+/*------------------------------------FIN NAVBAR------------------------------------*/
+
+/*-----------------------------------------------------------DIV BTS ---------------------------------------------------------------------------------*/
+.acceuil .BTS{
+    background-color: rgba(125,125,125, 0.7);
+    width: 500px;
+    margin-left: 50px;
+    color: #fff;
+    position: fixed;
+    margin-top: 20px;
+}
+.acceuil .BTS h1{
+    font-size: 22px;
+    text-decoration: underline;
+    text-align: center;
+}
+.acceuil .BTS h2{
+    font-size: 18px;
+}
+.acceuil .BTS h2.spe{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.acceuil .BTS p {
+    margin-left: 10px;
+}
+
+.acceuil .BTS:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(125,125,125);
+    font-size: medium;
+}
+/*---------------------------------------------------------FIN DIV BTS------------------------------------------------------------------------------*/
+.acceuil .pours{
+    background-color: rgba(125,125,125, 0.7);
+    width: 500px;
+    margin-right: 50px;
+    color: #fff;
+    float: right;
+    margin-top: 20px;
+}
+
+.acceuil .pours h2{
+    font-size: 18px;
+}
+
+.acceuil .pours p {
+    margin-left: 10px;
+}
+
+.acceuil .pours h1{
+    font-size: 22px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.acceuil .pours:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(125,125,125);
+    font-size: medium;
+}
+
+@media only screen and (max-width:1127px){
+    .acceuil .pours{
+        display: none;
+    }
+    .acceuil .BTS{
+        display: none;
+    }
+
+    .acceuil .remp{
+        display: block;
+        text-align: center;
+        border: 3px solid black;
+        color: black;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;
+        width: 300px;
+    }
+}
+
+
+.remp{
+    display: none;
+}
+/*--------------------------------FIN POURSUITE D'ETUDE---------------------------*/
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+}
+footer p a {
+    color: white;
+}
+.linkedin{
+    width: 100px;
+    height: 100px;
+    bottom:0;
+    right:0;
+    display: relative;
+    position: absolute;
+}

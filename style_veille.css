@@ -1,0 +1,90 @@
+
+html, body {
+    margin : 0;
+    padding : 0;
+}
+
+/*-------------------------------Navbar-------------------------------*/
+.navbar{
+    background-color: rgba(125,125,125,1);
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+}
+.n-left{
+    float: left;
+}
+.n-right{
+    float: right;
+}
+.logo{
+    color: white;
+    text-transform: uppercase ;
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+}
+.n-link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;margin: 0 15px;
+    transition: all 0.3 ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.n-link:hover{
+    border-color: #000;
+    padding-bottom: 3px;
+}
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 35px;
+}
+@media only screen and (max-width:1250px){
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .n-right{
+        position: absolute;
+        background-color: rgba(125,125,125, 0.25);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -100%;
+    }
+    .n-right.mobile-menu{
+        margin-left: 0;
+        transition: all 0.5s ease;
+    }
+    .n-link:hover{
+        color: white;
+        font-size: 1rem;
+    }
+    .n-left{
+        position: absolute;
+    }
+    p{
+        text-align: center;
+        margin: 50px;
+    }
+}
+
+/*-----------------------------FIN-Navbar-----------------------------*/
+.ima_concep{
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: double underline;
+}
