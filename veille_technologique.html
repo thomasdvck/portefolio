@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio DEVINCK Thomas</title>
+	<link rel="stylesheet" href="../style/style_veille.css">
+</head>
+<body style="height: 100vh;">
+	<header class="header">
+		<nav class="navbar">
+			<div class="n-left">
+                <a href="../index.html" class="logo">Thomas Devinck</a>
+            </div>
+			<div class="n-right">
+				<a href="../index.html" class="n-link">Acceuil</a>
+				<a href="profil.html" class="n-link">profil</a>
+				<a href="page_administratif.html" class="n-link">document administratif</a>
+				<a href="competence_acq.html" class="n-link">competences acquises</a>
+				<a href="veille_technologique.html" class="n-link">Veille technologique</a>
+			</div>
+            <img src="../Images/menu-btn.png" alt="menu hamburger" class="menu-hamburger" >
+		</nav>
+	</header>
+    <main>
+		<img src="../Images/comprendre-ecoconception-web-header-image.jpg" alt="image éco conception web" class="ima_concep">
+        <h1>L’éco-conception web 🌱.</h1>
+		<h2>Introduction</h2>
+		<p>
+			Les usages numériques font partie intégrante de notre quotidien. En 2020, nous avons passé en moyenne 2h25 chaque jour sur le web. C'est 15% de plus que l’année précédente. On n’a jamais passé autant de temps sur internet et cela génère un impact environnemental conséquent. C’est une pollution dont on n'a pas toujours conscience et qui peut sembler invisible, mais qui est pourtant bien réelle. Dans cet article, on vous aide à comprendre pourquoi il est important de prendre en compte la contrainte environnementale lors de la conception d'un site web, et comment créer un site plus écologique !  
+		</p>
+		<h2>Le but de l'éco-conception web :</h2>
+		<p>
+			L’éco-conception web est une démarche qui consiste à limiter l’impact des sites Internet. L’objectif est de concevoir des sites moins énergivores, et donc plus respectueux de l’environnement, sans pour autant négliger leurs performances. Opter pour l’éco-conception web, c’est rechercher l’efficience : en faire autant avec le moins de ressources possible. Autrement dit, on se contente de l’essentiel et on supprime le superflu. Simplicité et pertinence sont les maîtres mots.  
+		</p>
+
+		<p>
+			Les ressources utilisé pour m'informer sur cette veille sont des blogs comme <a href="https://www.concept-image.fr/blog/leco-conception-web-pourquoi-et-comment-creer-un-site-respectueux-de-lenvironnement/">Le blog sur l'éco conception web</a>
+			Je pourrais aussi m'informer grace à des article et en parler a des développeurs pour savoir ce qu'ils en pensent.
+		</p>
+
+    </main>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".n-right")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

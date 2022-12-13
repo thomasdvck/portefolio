@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio DEVINCK Thomas</title>
+	<link rel="stylesheet" href="../style/style_competence.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="n-left">
+                <a href="../index.html" class="logo">Thomas Devinck</a>
+            </div>
+			<div class="n-right">
+				<a href="../index.html" class="n-link">Acceuil</a>
+				<a href="profil.html" class="n-link">profil</a>
+				<a href="page_administratif.html" class="n-link">document administratif</a>
+				<a href="competence_acq.html" class="n-link">competences acquises</a>
+				<a href="veille_technologique.html" class="n-link">Veille technologique</a>
+			</div>
+            <img src="../Images/menu-btn.png" alt="menu hamburger" class="menu-hamburger" >
+		</nav>
+	</header>
+    <main>
+        <h1>Compétences acquises</h1>
+		<p>Lors de mes 2 années de BTS SIO je vais acquérir des compétences informatiques</p>
+		<section class="liste">
+			<ul>
+				<li>Pour la création de mon portefolio j'ai acquis ces compétences-ci :</li>
+					<ul>
+						<li><a href="../telechargement/DEVINCK Thomas_machine_virtuelle.pdf" download>Création d'une machine virtuelle</a></li>
+					</ul>
+				<li>En développement :</li>
+					<ul>
+						<li> HTML </li>
+						<li> CSS </li>
+						<li> Javascript </li>
+					</ul>
+			
+				</ul>
+
+		</section>
+    </main>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".n-right")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

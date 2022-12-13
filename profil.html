@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio DEVINCK Thomas</title>
+	<link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="n-left">
+                <a href="../index.html" class="logo">Thomas Devinck</a>
+            </div>
+			<div class="n-right">
+				<a href="../index.html" class="n-link">Acceuil</a>
+				<a href="profil.html" class="n-link">profil</a>
+				<a href="page_administratif.html" class="n-link">document administratif</a>
+				<a href="competence_acq.html" class="n-link">competences acquises</a>
+				<a href="veille_technologique.html" class="n-link">Veille technologique</a>
+			</div>
+            <img src="../Images/menu-btn.png" alt="menu hamburger" class="menu-hamburger" >
+		</nav>
+	</header>
+    <main>
+        <h1 class="profil">Profil</h1>
+		<h2> - A propos de moi</h2>
+		<p>Je m'apelle Devinck Thomas, j'ai actuellement 19 ans et je suis étuidant au sein du lycée gaston berger a Lille. Je suis en première année
+			du BTS SIO (services informatiques aux organisations), je souhaite poursuivre en spécialité SLAM "Solutions logicielles et applications métiers".
+			Mon intêret envers l'informatique s'est développé lors de mon stage de 3e que j'ai effectué au sein de l'entreprise AFG (maintenant Neo-Soft) puis c'est confirmé lors de mes années de secondes et terminales au sein du Lycée Jean Perrin puis en première année de Licence SESI (Sciences exactes et sciences de l'ingenieurs)
+		</p>
+		<p>Téléchargement de mon cv :<br><a href="../telechargement/CV_Thomas_Devinck_BTS.pdf" download>Voici mon CV</a></p>
+		<h2> - Projet professionnel</h3>
+		<div class="projet-pro">
+			<p class ="carre">
+				J'ai eu l'opportunité d'effectuer mon stage d'observation de 3e dans une entreprise informatique se nommant AFG (maintenant devenu Néo-Soft) qui m'as permit de découvrir les différents métiers et domaines de l'informatique, c'est une experience qui m'as conforter dans le choix de l'informatique. De plus aujourd'hui j'acquérit une experience professionnelles en étant préparateur de commandes drive en grande distribution
+			</p>
+			<img src="../Images/afg_your_digital_engine.png	" class="test">
+			<img src="../Images/chrono.jpg">
+		</div>
+		<div class="reseau">
+			<h1> Voici mes différents réseaux :</h1>
+			<ul>
+				<li>Linkedin : <a href="https://fr.linkedin.com/in/thomas-devinck-110ba124b">https://fr.linkedin.com/in/thomas-devinck-110ba124b</a> </li>
+				<li>Viadeo : <a href="https://viadeo.journaldunet.com/p/thomas-devinck-7977939?">https://viadeo.journaldunet.com/p/thomas-devinck-7977939?</a></li>
+				<li>Indeed : allez directement sur indeed </li>
+			</ul>
+		</div>
+	</main>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".n-right")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

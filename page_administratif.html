@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio DEVINCK Thomas</title>
+	<link rel="stylesheet" href="../style/style_administratif.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<div class="n-left">
+                <a href="../index.html" class="logo">Thomas Devinck</a>
+            </div>
+			<div class="n-right">
+				<a href="../index.html" class="n-link">Acceuil</a>
+				<a href="profil.html" class="n-link">profil</a>
+				<a href="page_administratif.html" class="n-link">document administratif</a>
+				<a href="competence_acq.html" class="n-link">competences acquises</a>
+				<a href="veille_technologique.html" class="n-link">Veille technologique</a>
+			</div>
+            <img src="../Images/menu-btn.png" alt="menu hamburger" class="menu-hamburger" >
+		</nav>
+	</header>
+    <main>
+        <h1>Pages administratif</h1>
+		<p>Cette page me sert à mettre mes conventions de stage ainsi que des documents administratif</p>
+		<ul>
+			<li>
+				voici mon tableau de stage : <a href="../telechargement/Classeur stage.xlsx">Classeur demande de stage</a>
+			</li>
+		</ul>
+    </main>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".n-right")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
